@@ -56,22 +56,22 @@ const ButtonAssistant = () => {
   return (
     <div className='  '>
       <section className='h-full'>
-        <h1 className='text-center text-3xl py-6 font-bold'>Vxrcel Assistant</h1>
+        <h1 className='text-center text-3xl py-6 font-bold text-white'>Vxrcel Assistant</h1>
 
-        <div className="btn-all grid container items-center justify-center mb-12 px-auto mx-auto grid-cols-3 gap-20">
-          <button onClick={(e) => handleButtonClick(1, e)} data-id="1" className='rounded-lg my-7 shadow-md w-48 font-medium text-xl py-1 cursor-pointer bg-black text-white'>
+        <div className="btn-all grid container items-center justify-center mb-12 px-auto mx-auto grid-cols-2 lg:grid-cols-3 gap-20">
+          <button onClick={(e) => handleButtonClick(1, e)} data-id="1" className='rounded-lg my-7 shadow-md w-48 font-medium border border-gray-400 text-xl py-1 cursor-pointer bg-black text-white'>
             What is CSS
           </button>
-          <button onClick={(e) => handleButtonClick(2, e)} data-id="2" className='rounded-lg my-7 shadow-md w-48 font-medium text-xl py-1 cursor-pointer bg-black text-white'>
+          <button onClick={(e) => handleButtonClick(2, e)} data-id="2" className='rounded-lg my-7 shadow-md w-48 font-medium border border-gray-400 text-xl py-1 cursor-pointer bg-black text-white'>
             What is HTML
           </button>
-          <button onClick={(e) => handleButtonClick(3, e)} data-id="3" className='rounded-lg my-7 shadow-md w-48 font-medium text-xl py-1 cursor-pointer bg-black text-white'>
+          <button onClick={(e) => handleButtonClick(3, e)} data-id="3" className='rounded-lg my-7 shadow-md w-48 font-medium border border-gray-400 text-xl py-1 cursor-pointer bg-black text-white'>
             TypeScript or JS
           </button>
-          <button onClick={(e) => handleButtonClick(4, e)} data-id="4" className='rounded-lg my-7 shadow-md w-48 font-medium text-xl py-1 cursor-pointer bg-black text-white'>
+          <button onClick={(e) => handleButtonClick(4, e)} data-id="4" className='rounded-lg my-7 shadow-md w-48 font-medium border border-gray-400 text-xl py-1 cursor-pointer bg-black text-white'>
             Web 3?
           </button>
-          <button onClick={(e) => handleButtonClick(5, e)} data-id="5" className='rounded-lg my-7 shadow-md w-48 font-medium text-xl py-1 cursor-pointer bg-black text-white'>
+          <button onClick={(e) => handleButtonClick(5, e)} data-id="5" className='rounded-lg my-7 shadow-md w-48 font-medium border border-gray-400 text-xl py-1 cursor-pointer bg-black text-white'>
             Chat GPT
           </button>
 
@@ -79,7 +79,7 @@ const ButtonAssistant = () => {
         <div className="model flex justify-end align-end" style={modelContainerPosition}>
           <div id="container"></div>
           <img src={assit} className='w-12 h-12 rounded-lg shadow-lg opacity-50' alt="assistant" />
-          <p className="descriptions  w-64 rounded-lg text-lg font-medium p-2 shadow-lg h-24" style={isDescriptionVisible ? { display: 'block' } : { display: 'none' }}>{descriptionText}</p>
+          <p className="descriptions  w-64 rounded-lg text-lg font-medium border border-gray-400 p-2 shadow-lg h-24" style={isDescriptionVisible ? { display: 'block' } : { display: 'none' }}>{descriptionText}</p>
         </div>
       </section>
     </div>
