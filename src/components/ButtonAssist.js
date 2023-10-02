@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import assit from '../pointer.gif'
+import BOT from '../pointer.gif'
 const ButtonAssistant = () => {
   const [list] = useState({
     button1: "CSS (Cascading Style Sheets) is a stylesheet language used for describing the look and formatting of a document written in HTML or XML",
@@ -73,8 +73,8 @@ const ButtonAssistant = () => {
         </div>
         <div className="model flex justify-end align-end" style={modelContainerPosition}>
           <div id="container"></div>
-          <img src={assit} className='w-16 h-16 rounded-lg shadow-lg opacity-80' alt="assistant" />
-          <p className="descriptions mt-2 w-64 rounded-lg text-lg font-medium border border-gray-400 p-2 shadow-lg h-full text-white" style={isDescriptionVisible ? { display: 'block' } : { display: 'none' }}>{descriptionText}</p>
+          <img src={BOT} className={`w-16 h-16 rounded-lg shadow-lg opacity-80 ${!isDescriptionVisible && 'opacity-0'}`} alt="assistant" />
+          <p className="descriptions mt-2 w-64 rounded-lg text-lg font-medium border border-gray-400 p-2 shadow-lg h-full text-white backdrop-blur-xl" style={isDescriptionVisible ? { display: 'block' } : { display: 'none' }}>{descriptionText}</p>
         </div>
       </section>
     </div>
