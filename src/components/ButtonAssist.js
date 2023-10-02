@@ -20,12 +20,7 @@ const ButtonAssistant = () => {
     top: 0,
     left: 0,
     bottom: 'unset',
-    right: 'unset',
-    height: 'auto',
-    width: '300px',
-    background: 'black',
-    color: 'white',
-    backdropFilter: 'blur(10px)'
+    right: 'unset'
   });
 
   const moveModelContainer = (xPos, yPos, height) => {
@@ -35,11 +30,7 @@ const ButtonAssistant = () => {
       left: `${xPos}px`,
       bottom: 'unset',
       right: 'unset',
-      height: 'auto',
-      width: '300px',
-      background: 'black',
-      color: 'white',
-      backdropFilter: 'blur(10px)'
+
     });
   };
 
@@ -82,8 +73,8 @@ const ButtonAssistant = () => {
         </div>
         <div className="model flex justify-end align-end" style={modelContainerPosition}>
           <div id="container"></div>
-          <img src={assit} className='w-12 h-12 rounded-lg shadow-lg opacity-50' alt="assistant" />
-          <p className="descriptions  w-64 rounded-lg text-lg font-medium border border-gray-400 p-2 shadow-lg h-full" style={isDescriptionVisible ? { display: 'block' } : { display: 'none' }}>{descriptionText}</p>
+          <img src={assit} className='w-16 h-16 rounded-lg shadow-lg opacity-80' alt="assistant" />
+          <p className="descriptions mt-2 w-64 rounded-lg text-lg font-medium border border-gray-400 p-2 shadow-lg h-full text-white" style={isDescriptionVisible ? { display: 'block' } : { display: 'none' }}>{descriptionText}</p>
         </div>
       </section>
     </div>
