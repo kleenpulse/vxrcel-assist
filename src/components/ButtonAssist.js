@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import BOT from '../pointer.gif'
+
 const ButtonAssistant = () => {
   const [list] = useState({
     button1: "CSS (Cascading Style Sheets) is a stylesheet language used for describing the look and formatting of a document written in HTML or XML",
@@ -51,6 +52,7 @@ const ButtonAssistant = () => {
 
   return (
     <div className='  '>
+
       <section className='h-full'>
         <h1 className='text-center text-3xl py-6 font-bold text-white'>Vxrcel Assistant</h1>
 
