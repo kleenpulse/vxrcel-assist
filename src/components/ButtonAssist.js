@@ -9,6 +9,7 @@ const ButtonAssistant = () => {
     button4: "Web 3 refers to a decentralized internet ecosystem utilizing blockchain technology, enabling peer-to-peer interactions, secure transactions, and user control over data, reshaping online experiences beyond centralized control.",
 
     button5: "ChatGPT is an advanced language model created by OpenAI, capable of generating human-like text responses.",
+    button6: "Next.js is a popular React framework that enables efficient server-side rendering, static site generation, and easy configuration, simplifying the development of fast, scalable, and SEO-friendly web applications.",
 
 
   });
@@ -68,6 +69,9 @@ const ButtonAssistant = () => {
           </button>
           <button onClick={(e) => handleButtonClick(5, e)} data-id="5" className='rounded-lg my-7 shadow-md w-48 font-medium border border-gray-400 text-xl py-1 cursor-pointer bg-black text-white'>
             Chat GPT
+          </button>
+          <button onClick={(e) => handleButtonClick(6, e)} data-id="6" className='rounded-lg my-7 shadow-md w-48 font-medium border border-gray-400 text-xl py-1 cursor-pointer bg-black text-white'>
+            Next js
           </button>
 
         </div>
